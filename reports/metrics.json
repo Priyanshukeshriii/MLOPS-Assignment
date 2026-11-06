@@ -1,0 +1,20 @@
+{
+  "mae": 4.658420272452305,
+  "rmse": 5.7988564314308055,
+  "r2": 0.9653201452219555,
+  "rows_total": 1200,
+  "rows_train": 960,
+  "rows_test": 240,
+  "features": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "distance_to_city_km",
+    "parking_spaces"
+  ],
+  "target": "price_lakh",
+  "model_type": "random_forest_regressor",
+  "random_state": 42,
+  "test_size": 0.2
+}

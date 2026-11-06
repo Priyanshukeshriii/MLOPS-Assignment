@@ -1,0 +1,13 @@
+{
+  "http_status": 200,
+  "title": "House Price Prediction API",
+  "version": "1.0.0",
+  "paths": {
+    "/health": [
+      "GET"
+    ],
+    "/predict": [
+      "POST"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Docker execution status in this evidence environment
+Command: docker --version
+Output: bash: line 1: docker: command not found
+
+Docker image build/run has NOT been executed here because the Docker CLI/engine is unavailable.
+Run the Docker commands in DOCKER_SCREENSHOT_GUIDE.txt on a machine with Docker Desktop/Engine.

@@ -1,0 +1,14 @@
+stages:
+  train:
+    cmd: python -m src.train
+    deps:
+      - data/raw/housing.csv
+      - configs/config.yaml
+      - src/data.py
+      - src/train.py
+      - src/evaluate.py
+    outs:
+      - models/house_price_pipeline.joblib
+    metrics:
+      - reports/metrics.json:
+          cache: false

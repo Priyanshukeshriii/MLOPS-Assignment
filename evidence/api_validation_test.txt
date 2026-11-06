@@ -1,0 +1,18 @@
+$ POST http://127.0.0.1:8000/predict  (area_sqft = -10)
+HTTP 422
+{
+  "detail": [
+    {
+      "type": "greater_than",
+      "loc": [
+        "body",
+        "area_sqft"
+      ],
+      "msg": "Input should be greater than 0",
+      "input": -10,
+      "ctx": {
+        "gt": 0.0
+      }
+    }
+  ]
+}

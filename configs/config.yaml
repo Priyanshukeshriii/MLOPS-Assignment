@@ -1,0 +1,30 @@
+project:
+  name: house-price-prediction-mlops
+  description: Reproducible synthetic house-price regression pipeline
+
+paths:
+  data: data/raw/housing.csv
+  model: models/house_price_pipeline.joblib
+  metrics: reports/metrics.json
+  evaluation_report: reports/evaluation_report.json
+
+training:
+  random_state: 42
+  test_size: 0.20
+
+data:
+  target_column: price_lakh
+  feature_columns:
+    - area_sqft
+    - bedrooms
+    - bathrooms
+    - age_years
+    - distance_to_city_km
+    - parking_spaces
+
+model:
+  type: random_forest_regressor
+  n_estimators: 160
+  max_depth: 12
+  min_samples_split: 2
+  min_samples_leaf: 1

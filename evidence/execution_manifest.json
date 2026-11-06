@@ -1,0 +1,38 @@
+{
+  "training_exit_code": 0,
+  "evaluation_exit_code": 0,
+  "prediction_exit_code": 0,
+  "pytest_exit_code": 0,
+  "health_http_status": 200,
+  "prediction_http_status": 200,
+  "invalid_input_http_status": 422,
+  "openapi_http_status": 200,
+  "docker_cli_available": false,
+  "docker_check_output": "bash: line 1: docker: command not found",
+  "prediction": {
+    "prediction_lakh": 60.16,
+    "currency": "INR",
+    "unit": "lakh",
+    "model": "house_price_pipeline"
+  },
+  "metrics": {
+    "mae": 4.658420272452305,
+    "rmse": 5.7988564314308055,
+    "r2": 0.9653201452219555,
+    "rows_total": 1200,
+    "rows_train": 960,
+    "rows_test": 240,
+    "features": [
+      "area_sqft",
+      "bedrooms",
+      "bathrooms",
+      "age_years",
+      "distance_to_city_km",
+      "parking_spaces"
+    ],
+    "target": "price_lakh",
+    "model_type": "random_forest_regressor",
+    "random_state": 42,
+    "test_size": 0.2
+  }
+}

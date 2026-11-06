@@ -1,0 +1,15 @@
+$ GET http://127.0.0.1:8000/health
+HTTP 200
+{
+  "status": "ok",
+  "model_loaded": true
+}
+
+$ POST http://127.0.0.1:8000/predict
+HTTP 200
+{
+  "prediction_lakh": 60.16,
+  "currency": "INR",
+  "unit": "lakh",
+  "model": "house_price_pipeline"
+}

@@ -1,0 +1,3 @@
+GET /health -> 200 {'status': 'ok', 'model_loaded': True}
+POST /predict -> 200 {'prediction_lakh': 60.16, 'currency': 'INR', 'unit': 'lakh', 'model': 'house_price_pipeline'}
+GET /docs -> 200
